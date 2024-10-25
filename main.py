@@ -85,8 +85,8 @@
 # Faça um programa que peça ao usuário para digitar uma data no formato "dd/mm/aaaa" e, em seguida, imprima o dia, o mês e o ano separadamente.
 
 #a = input("Qual a data? ")
-#
-# print(f"O dia é: {a[0:2]}, o mês é: {a[3:5]}, o ano é: {a[6:]}")
+#b = a.split("/")
+#print(f"O dia é: {b[0]}, o mês é: {b[1]} e o ano é: {b[2]}")
  
 # Escreva um programa que concatene duas strings fornecidas pelo usuário.
 
@@ -189,4 +189,12 @@
 
 #Crie um script que solicite ao usuário uma lista de números separados por vírgula. O programa deve converter a string de entrada em uma lista de números #inteiros. Utilize try-except para tratar a conversão de cada número e validar que cada elemento da lista convertida é um inteiro. Se a conversão falhar ou #um elemento não for um inteiro, imprima uma mensagem de erro. Se a conversão for bem-sucedida para todos os elementos, imprima a lista de inteiros.
 
-a = input("Qual a lista? ")
+#a = input("Qual a lista? ")
+#b = a.split(",")
+#c = []
+#try:
+#    for i in b:
+#        c.append(int(i))
+#    print("A lista: ", c)
+#except:
+#    print('Um dos valores não é numérico.')
