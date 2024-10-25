@@ -63,7 +63,7 @@
 # Escreva um programa que calcule a área de um círculo, recebendo o raio como entrada.
 
 #a = float(input("Qual o raio do círculo? "))
-#c = 2*3.14*a
+#c = 3.14*a**2
 #print("A área do círculo é: ", c)
 
 # Strings (str)
