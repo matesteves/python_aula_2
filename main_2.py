@@ -73,10 +73,8 @@ import numpy as np
 
 #14
 #date = str(input("What's the date? DD/MM/YYYY "))
-#day = date[:2]
-#month = date[3:5]
-#year = date[6:]
-#print(f"Day: {day}, month: {month}, year: {year}")
+#date_list = date.split("/")
+#print(f"Day: {date_list[0]}, month: {date_list[1]}, year: {date_list[2]}")
 
 #15
 #phrase1 = str(input("What's your first input? "))
@@ -110,4 +108,68 @@ import numpy as np
 #
 #print(f"Are your numbers equal? {test}")
 
-#20
+#21
+
+#try:
+#    c = float(input("What's the temperature in Celsius? "))
+#    f = (c * 9/5) + 32
+#    print(f"The temperature in Fahrenheits is: {f}")
+#except:
+#    print("Your input needs to be a number.")
+
+#22
+#text = input("Type your input: ")
+#if isinstance(text, str):
+#    formatted_text = text.replace(" ", "").lower()
+#    if formatted_text == formatted_text[::-1]:
+#        print("It's a palindrome.")
+#    else:
+#        print("It's not a palindrome.")
+#else:
+#    print("Invalid input. Write a text.")
+
+#23
+#try:
+#    num1 = float(input("Type the first number: "))
+#    num2 = float(input("Type the second number: "))
+#    operation = input("What's the operation you want to perform? (+, -, *, /) ")
+#    if operation == '+':
+#        result = num1 + num2
+#    elif operation == '-':
+#        result = num1 - num2
+#    elif operation == '*':
+#        result = num1 * num2
+#    elif operation == '/' and num2 != 0:
+#        result = num1 / num2
+#    else:
+#        print("Invalid operator or division by 0")
+#    print("Resultado:", result)
+#except ValueError:
+#    print("Error: Invalid entry. Make sure to type numbers only.")
+
+#24
+#try:
+#    number = int(input("Type a number: "))
+#    if number > 0:
+#        print("Positive")
+#    elif number < 0:
+#        print("Negative")
+#    else:
+#        print("Zero")
+#    if number % 2 == 0:
+#        print("Even")
+#    else:
+#        print("Odd")
+#except ValueError:
+#    print("Please, make sure to type a number.")
+
+#25
+#list = input("Type a list of numbers separated by commas.")
+#num_str = list.split(",")
+#num_int = []
+#try:
+#    for num in num_str:
+#        num_int.append(int(num.strip()))
+#    print("Integer list:", num_int)
+#except ValueError:
+#    print("Error: make sure that all numbers are valid integers.")
